@@ -1,11 +1,13 @@
 :root {
-  --bg: #101114;
-  --bg-raised: #181b22;
-  --ink: #f4f1ea;
-  --muted: #b7b1a6;
-  --line: #2c303a;
-  --accent: #ff5a36;
-  --focus: #f4f1ea;
+  --bg: #fbf6f4;
+  --bg-raised: #fffdfb;
+  --ink: #1c332c;
+  --muted: #5c6d66;
+  --line: #eadadf;
+  --accent: #b23d66;
+  --green: #1f7a5c;
+  --green-soft: #e5f3ec;
+  --focus: #1c332c;
   --header: 4.5rem;
   --content: 68rem;
 }
@@ -24,7 +26,8 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    radial-gradient(ellipse 80% 40% at 100% -10%, rgba(255, 90, 54, 0.16), transparent 55%),
+    radial-gradient(ellipse 70% 45% at 100% -8%, rgba(214, 120, 156, 0.28), transparent 58%),
+    radial-gradient(ellipse 50% 35% at -10% 110%, rgba(31, 122, 92, 0.12), transparent 60%),
     var(--bg);
   color: var(--ink);
   font-family: "Schibsted Grotesk", sans-serif;
@@ -58,7 +61,7 @@ body {
   gap: 0.75rem 1rem;
   min-height: var(--header);
   padding: 0.75rem 6vw;
-  background: rgba(16, 17, 20, 0.9);
+  background: rgba(251, 246, 244, 0.92);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(12px);
 }
@@ -91,7 +94,7 @@ body {
 .text-link:hover,
 .contact-links a:hover,
 .brand:hover {
-  border-bottom-color: var(--accent);
+  border-bottom-color: var(--green);
 }
 
 a:focus-visible,
@@ -190,9 +193,10 @@ h2 {
 
 .tags li {
   padding: 0.25rem 0.65rem;
-  border: 1px solid var(--line);
+  border: 1px solid transparent;
   border-radius: 999px;
-  color: var(--ink);
+  background: var(--green-soft);
+  color: var(--green);
   font-size: 0.85rem;
 }
 
@@ -207,7 +211,7 @@ h2 {
   gap: 0.85rem;
   aspect-ratio: 16 / 9;
   background:
-    linear-gradient(180deg, rgba(255, 90, 54, 0.08), transparent 40%),
+    linear-gradient(180deg, rgba(214, 120, 156, 0.16), transparent 46%),
     var(--bg-raised);
   border: 1px solid var(--line);
   border-radius: 1rem;
@@ -232,8 +236,9 @@ h2 {
   position: relative;
   width: 3.25rem;
   height: 3.25rem;
-  border: 1px solid var(--line);
+  border: 1px solid var(--green);
   border-radius: 50%;
+  background: var(--green-soft);
 }
 
 .play::before {
