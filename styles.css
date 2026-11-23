@@ -221,32 +221,6 @@ h2 {
   margin: 0;
 }
 
-.project .poster-credit {
-  margin: 0.75rem 0 0;
-  color: var(--muted);
-}
-
-.project .poster-credit strong {
-  display: block;
-  color: var(--ink);
-}
-
-.poster-card {
-  display: grid;
-  place-items: center;
-  width: min(100%, 640px);
-  aspect-ratio: 16 / 9;
-  margin: 0;
-  border: 1px solid var(--line);
-  border-radius: 0.85rem;
-  background:
-    linear-gradient(160deg, rgba(31, 122, 92, 0.16), rgba(178, 61, 102, 0.1)),
-    var(--bg-raised);
-  color: var(--ink);
-  font-family: "Instrument Serif", serif;
-  font-size: clamp(2rem, 4vw, 3rem);
-}
-
 .video-frame video {
   display: block;
   width: 100%;
@@ -262,6 +236,10 @@ h2 {
   border: 1px solid var(--line);
   border-radius: 0.85rem;
   background: var(--bg-raised);
+}
+
+.poster img.logo {
+  width: min(100%, 280px);
 }
 
 .poster figcaption {
